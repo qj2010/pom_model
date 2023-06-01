@@ -1,7 +1,7 @@
 import time
 
 from selenium.webdriver.common.by import By
-from pom_pytest_model.base.basepage import BasePage
+from base.basepage import BasePage
 
 
 class One(BasePage):

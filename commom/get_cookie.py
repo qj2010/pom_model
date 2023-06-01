@@ -2,12 +2,14 @@ import json
 import os
 from selenium import webdriver
 import time
-from pom_pytest_model.data.object_path import cookie_as, boe, pre
+from data.object_path import boe, cookie_as
+
 
 # print(os.path.dirname(__file__))
 # options = webdriver.ChromeOptions()
 # options.add_argument('requests_header')
 # driver = webdriver.Chrome(options=options)
+
 driver = webdriver.Chrome()
 driver.get(boe)
 time.sleep(15)

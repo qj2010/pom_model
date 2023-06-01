@@ -1,6 +1,6 @@
 import openpyxl
 import os
-from pom_pytest_model.data.object_path import excel_as
+from data.object_path import excel_as
 
 
 class ExcelUtil:

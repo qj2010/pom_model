@@ -1,8 +1,8 @@
 import json
 import time
 from selenium import webdriver
-from pom_pytest_model.data.object_path import cookie_as
-from pom_pytest_model.data.object_path import boe
+from selenium.webdriver import ActionChains
+from data.object_path import boe, cookie_as
 
 
 class BasePage:
@@ -42,6 +42,9 @@ class BasePage:
 
     def send_keys(self, loc, value, place):
         self.locator_elements(loc)[place].send_keys(value)
+
+    def act_click(self, loc):
+        ActionChains(self.driver).click(self.locator_element(loc)).perform()
 
     def get_now(self):
         now = time.localtime()

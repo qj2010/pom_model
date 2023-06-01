@@ -1,8 +1,8 @@
 import time
 import pytest
-from pom_pytest_model.commom.excel_util import ExcelUtil
-from pom_pytest_model.pageobject.a_page import One
-from pom_pytest_model.pageobject.b_page import Two
+from commom.excel_util import ExcelUtil
+from pageobject.a_page import One
+from pageobject.b_page import Two
 
 
 class TestCase:
